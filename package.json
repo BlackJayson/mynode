@@ -1,15 +1,13 @@
 {
-  "name": "electron-quick-start",
+  "name": "demo",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A  Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+	"package": "electron-packager ./ demo notes --platform=win32 --out ./OutApp --electron-version 21.1.1 --overwrite --icon=resourse/icon/logo.ico --electron-zip-dir=./resourse/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
-  },
+  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
     "quick",
@@ -17,17 +15,9 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "Jayson",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^12.2.3"
-  },
-  "bugs": {
-    "url": "https://github.com/electron/electron-quick-start/issues"
-  },
-  "homepage": "https://github.com/electron/electron-quick-start#readme",
-  "dependencies": {
-    "electron-packager": "^17.0.0",
-    "gulp": "^4.0.2"
+    "electron": "^21.1.1"
   }
 }
